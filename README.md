@@ -18,7 +18,7 @@ NOTE: This list is only for open source solutions, not for closed source solutio
 
 # Table of Contents
 
-  * [#1: Cloud security posture management (CSPM)](#cspm)
+  * [1: Cloud security posture management (CSPM)](#cspm)
   * [#2: Software composition analysis (SCA) of open-source dependencies](#sca)
   * [#3: Secrets detection](#secrets)
   * [#4: Static application security testing (SAST)](#sast)
@@ -31,7 +31,7 @@ NOTE: This list is only for open source solutions, not for closed source solutio
 
 
 
-## #1: Cloud security posture management (CSPM)
+## 1: Cloud security posture management (CSPM)
 CSPM helps you enhance the security and compliance of your cloud environments. By continuously monitoring your applications and their upstream services against industry best practices and your internal policies, CSPM tools assess issues, prioritize them based on their criticality, and offer recommendations for remediation. With CSPM, you take more ownership of the baselines and guardrails that prevent yourself or others from promoting vulnerable applications to production while also rooting out misconfigurations and overly permissive user roles.
 
   * [Syft]([https://github.com/anchore/syft) + [Grype](https://github.com/anchore/grype)
