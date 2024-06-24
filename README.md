@@ -71,6 +71,8 @@ Unlike SAST, DAST simulates commonly exploited vulnerabilities against your app 
 ## #6: Infrastructure as code (IaC) scanning
 Your code is just half the equation in getting to production—today, most teams use IaC tools like Terraform, CloudFormation, and “base” Kubernetes Helm charts to provision cloud services in a declarative, version-controlled, and repeatable fashion. IaC scanners identify vulnerabilities in these JSON or YAML blueprints to prevent you from ever deploying an insecure state to production.
 
+* [Checkov](https://github.com/bridgecrewio/checkov)
+
 **[⬆️ Back to Top](#table-of-contents)**
 
 ## #7: Container image scanning
