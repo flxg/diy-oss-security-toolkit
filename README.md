@@ -42,6 +42,8 @@ Your apps inevitably have a large tree of open-source dependencies that you now 
 
   * [CloudSploit](https://github.com/aquasecurity/cloudsploit)
 
+**[⬆️ Back to Top](#table-of-contents)**
+
 ## #3: Secrets detection
 A secrets detection tool scans your code and configurations for credentials you don’t want to expose publicly. These secrets can include API keys, access tokens to third-party providers, passwords to upstream databases, certificates, encryption keys, and more, and once they’re pushed to a public repository, you’ll have to go through a painful process to remove them from your Git history—better to detect them early and take action before you commit.
 
