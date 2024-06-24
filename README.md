@@ -34,9 +34,49 @@ NOTE: This list is only for open source solutions, not for closed source solutio
 ## #1: Cloud security posture management (CSPM)
 CSPM helps you enhance the security and compliance of your cloud environments. By continuously monitoring your applications and their upstream services against industry best practices and your internal policies, CSPM tools assess issues, prioritize them based on their criticality, and offer recommendations for remediation. With CSPM, you take more ownership of the baselines and guardrails that prevent yourself or others from promoting vulnerable applications to production while also rooting out misconfigurations and overly permissive user roles.
 
+  * [Syft]([https://github.com/anchore/syft) + [Grype](https://github.com/anchore/grype)
+    * For locally-run SCA, you’ll need Syft to create a software bill of materials (SBOM) and Grype to analyze said SBOM for known vulnerabilities. Since the same team makes Syft and Grype, they support many installation methods but recommend their respective one-liners:
+
+## #2: Software composition analysis (SCA) of open-source dependencies
+Your apps inevitably have a large tree of open-source dependencies that you now rely on, from your UI framework all the way down to helper libraries you use in a single LOC, like a validator for email addresses. SCA is like a background check on your code’s extended family, identifying security vulnerability and licensing issues not once, but continuously. Because your SCA tools notify you about new vulnerabilities and remediations, you’ll have confidence your open-source supply chain remains a helper, not a hindrance, to productivity.
+
   * [CloudSPloit](https://github.com/aquasecurity/cloudsploit)
-    * To install CloudSploit, you’ll first need Node.js to download its dependencies and run the engine.
-    * Next, you need to configure CloudSploit with read permissions to your cloud account, with support for AWS, Azure, GCP, and Oracle. Follow the directions for your cloud provider, using the repo’s config_example.js file as your template, to create a config.js file with all the details you’ll need to run your first complete diagnostic and get results in JSON.
+
+## #3: Secrets detection
+A secrets detection tool scans your code and configurations for credentials you don’t want to expose publicly. These secrets can include API keys, access tokens to third-party providers, passwords to upstream databases, certificates, encryption keys, and more, and once they’re pushed to a public repository, you’ll have to go through a painful process to remove them from your Git history—better to detect them early and take action before you commit.
 
 
+
+## #4: Static application security testing (SAST)
+SAST is the fine-toothed comb of app security tools, analyzing your codebase line by line to check for flawed syntax, structure, or logic that could leave your app vulnerable. Think SQL injection attacks, cross-site scripting (XSS) opportunities, buffer overflows, and more. By checking against popular databases of known CVEs, a solid SAST tool will give you confidence that you’re not leaving big security flaws on the table—and some even offer autofix suggestions for quick remediation.
+
+
+
+## #5: Dynamic application security testing (DAST)
+Unlike SAST, DAST simulates commonly exploited vulnerabilities against your app in a live environment. It’s less about the syntax and structure of the code you wrote and much more about replicating the approaches an attacker might take against your production deployment. DAST tools will double-check known CVEs in frameworks and libraries you use and test whether logged-in users can access sensitive data due to broken permissions or “toxic combinations” of multiple vulnerabilities that open your app to far worse consequences.
+
+
+
+## #6: Infrastructure as code (IaC) scanning
+Your code is just half the equation in getting to production—today, most teams use IaC tools like Terraform, CloudFormation, and “base” Kubernetes Helm charts to provision cloud services in a declarative, version-controlled, and repeatable fashion. IaC scanners identify vulnerabilities in these JSON or YAML blueprints to prevent you from ever deploying an insecure state to production.
+
+
+
+## #7: Container image scanning
+We love containers because they abstract away so much complexity, but whenever you build a container image, it can inherit vulnerabilities from its base image or package dependencies. Container image scanners discover vulnerabilities in your base images and Dockerfiles, however deep the dependency tree goes, to prevent you from unwittingly deploying an exploitable app.
+
+
+
+## #8: Open-source license scanning
+The legality of using open-source software in your commercial products isn’t something you check with legal or compliance teams once and forget about. OSS projects change licenses more frequently than you might understand, requiring you to either pay for an enterprise version, seek an alternative, or open-source some of your private code. License scanners identify changes and help you sail through security audits with a ready-to-go software bill of materials (SBOM).
+
+
+
+## #9: Malware detection
+Malware scanners help you identify a threat that’s taken off in recent years: malware injected into dependency packages by attackers. The recent zx backdoor attempt is a fantastic—and frightening—example. Malware scanners detect these software supply chain attacks before you even merge your code to prevent you from having to make time-sensitive and costly fixes once the CVE goes public.
+
+
+
+## #10: End-of-life (EOL) runtime detection
+The more frameworks, libraries, and runtimes you include in your app, the more opportunities there are for you to be leveraged dangerously against outdated versions or unmaintained dependencies. This is especially critical for runtimes directly exposed to the public internet. EOL runtime detectors read your dependency tree through lockfiles—even those in containers—to alert you well ahead so you can prepare for updates or migrations.
 
