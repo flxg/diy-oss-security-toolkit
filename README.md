@@ -1,5 +1,5 @@
 # DIY OSS Security Toolkit
-A DIY guide on how to set up your code scanning and app security toolkit, covering ten different types of scanning solutions.
+This is a DIY guide on how to set up your code scanning and app security toolkit, covering **ten different types of scanning solutions**.
 
 You’re confident in your development chops—confident enough to know the apps you’ve built aren’t completely free of security and configuration flaws. You’ve also researched the deep ecosystem of scanning tools available and perhaps got overwhelmed by the sheer volume of choice. What’s the right “portfolio” of open-source app security tools to identify vulnerabilities in your dependencies, Infrastructure as Code (IaC) configurations, containers, and more?
 
