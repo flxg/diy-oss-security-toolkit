@@ -47,11 +47,16 @@ Your apps inevitably have a large tree of open-source dependencies that you now 
 A secrets detection tool scans your code and configurations for credentials you don’t want to expose publicly. These secrets can include API keys, access tokens to third-party providers, passwords to upstream databases, certificates, encryption keys, and more, and once they’re pushed to a public repository, you’ll have to go through a painful process to remove them from your Git history—better to detect them early and take action before you commit.
 
   * [Gitleaks](https://github.com/gitleaks/gitleaks)
+  * [Bandit](https://github.com/PyCQA/bandit) (Python)
+  * [gosec](https://github.com/securego/gosec) (Go)
+  * [Brakeman](https://github.com/presidentbeef/brakeman) (Ruby on rails)
 
 **[⬆️ Back to Top](#table-of-contents)**
 
 ## #4: Static application security testing (SAST)
 SAST is the fine-toothed comb of app security tools, analyzing your codebase line by line to check for flawed syntax, structure, or logic that could leave your app vulnerable. Think SQL injection attacks, cross-site scripting (XSS) opportunities, buffer overflows, and more. By checking against popular databases of known CVEs, a solid SAST tool will give you confidence that you’re not leaving big security flaws on the table—and some even offer autofix suggestions for quick remediation.
+
+  * [SemGrep](https://github.com/semgrep/semgrep)
 
 **[⬆️ Back to Top](#table-of-contents)**
 
