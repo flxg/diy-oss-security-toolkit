@@ -78,6 +78,8 @@ Your code is just half the equation in getting to production—today, most teams
 ## #7: Container image scanning
 We love containers because they abstract away so much complexity, but whenever you build a container image, it can inherit vulnerabilities from its base image or package dependencies. Container image scanners discover vulnerabilities in your base images and Dockerfiles, however deep the dependency tree goes, to prevent you from unwittingly deploying an exploitable app.
 
+* [Trivy](https://github.com/aquasecurity/trivy)
+
 **[⬆️ Back to Top](#table-of-contents)**
 
 ## #8: Open-source license scanning
@@ -88,10 +90,14 @@ The legality of using open-source software in your commercial products isn’t s
 ## #9: Malware detection
 Malware scanners help you identify a threat that’s taken off in recent years: malware injected into dependency packages by attackers. The recent zx backdoor attempt is a fantastic—and frightening—example. Malware scanners detect these software supply chain attacks before you even merge your code to prevent you from having to make time-sensitive and costly fixes once the CVE goes public.
 
+* [Phylum]([https://github.com/aquasecurity/trivy](https://github.com/phylum-dev/cli))
+* [Socket](https://github.com/socketio/socket.io)
+
 **[⬆️ Back to Top](#table-of-contents)**
 
 ## #10: End-of-life (EOL) runtime detection
 The more frameworks, libraries, and runtimes you include in your app, the more opportunities there are for you to be leveraged dangerously against outdated versions or unmaintained dependencies. This is especially critical for runtimes directly exposed to the public internet. EOL runtime detectors read your dependency tree through lockfiles—even those in containers—to alert you well ahead so you can prepare for updates or migrations.
 
+* [endoflife.date](https://endoflife.date)
 
 **[⬆️ Back to Top](#table-of-contents)**
