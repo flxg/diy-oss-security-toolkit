@@ -40,7 +40,7 @@ CSPM helps you enhance the security and compliance of your cloud environments. B
 ## #2: Software composition analysis (SCA) of open-source dependencies
 Your apps inevitably have a large tree of open-source dependencies that you now rely on, from your UI framework all the way down to helper libraries you use in a single LOC, like a validator for email addresses. SCA is like a background check on your code’s extended family, identifying security vulnerability and licensing issues not once, but continuously. Because your SCA tools notify you about new vulnerabilities and remediations, you’ll have confidence your open-source supply chain remains a helper, not a hindrance, to productivity.
 
-  * [CloudSPloit](https://github.com/aquasecurity/cloudsploit)
+  * [CloudSploit](https://github.com/aquasecurity/cloudsploit)
 
 ## #3: Secrets detection
 A secrets detection tool scans your code and configurations for credentials you don’t want to expose publicly. These secrets can include API keys, access tokens to third-party providers, passwords to upstream databases, certificates, encryption keys, and more, and once they’re pushed to a public repository, you’ll have to go through a painful process to remove them from your Git history—better to detect them early and take action before you commit.
