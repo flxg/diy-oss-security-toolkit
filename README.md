@@ -32,3 +32,11 @@ NOTE: This list is only for open source solutions, not for closed source solutio
 
 
 ## #1: Cloud security posture management (CSPM)
+CSPM helps you enhance the security and compliance of your cloud environments. By continuously monitoring your applications and their upstream services against industry best practices and your internal policies, CSPM tools assess issues, prioritize them based on their criticality, and offer recommendations for remediation. With CSPM, you take more ownership of the baselines and guardrails that prevent yourself or others from promoting vulnerable applications to production while also rooting out misconfigurations and overly permissive user roles.
+
+  * [CloudSPloit](https://github.com/aquasecurity/cloudsploit)
+    * To install CloudSploit, you’ll first need Node.js to download its dependencies and run the engine.
+    * Next, you need to configure CloudSploit with read permissions to your cloud account, with support for AWS, Azure, GCP, and Oracle. Follow the directions for your cloud provider, using the repo’s config_example.js file as your template, to create a config.js file with all the details you’ll need to run your first complete diagnostic and get results in JSON.
+
+
+
