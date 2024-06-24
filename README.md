@@ -90,7 +90,7 @@ The legality of using open-source software in your commercial products isn’t s
 ## #9: Malware detection
 Malware scanners help you identify a threat that’s taken off in recent years: malware injected into dependency packages by attackers. The recent zx backdoor attempt is a fantastic—and frightening—example. Malware scanners detect these software supply chain attacks before you even merge your code to prevent you from having to make time-sensitive and costly fixes once the CVE goes public.
 
-* [Phylum](https://github.com/aquasecurity/trivy](https://github.com/phylum-dev/cli)
+* [Phylum](https://github.com/phylum-dev/cli)
 * [Socket](https://github.com/socketio/socket.io)
 
 **[⬆️ Back to Top](#table-of-contents)**
