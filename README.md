@@ -1,5 +1,6 @@
 # DIY OSS Security Toolkit
 What’s the right “portfolio” of open-source app security tools?
+
 To identify vulnerabilities in your dependencies, Infrastructure as Code (IaC) configurations, containers, and more?
 
 To get you on the right track, we’ve listed 10 essential categories of code scanning and security tooling.
