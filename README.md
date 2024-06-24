@@ -18,7 +18,7 @@ NOTE: This list is only for open source solutions, not for closed source solutio
 
 # Table of Contents
 
-  * ['#1: Cloud security posture management (CSPM)'](#cspm)
+  * [#1: Cloud security posture management (CSPM)](#cspm)
   * [#2: Software composition analysis (SCA) of open-source dependencies] (#sca)
   * [#3: Secrets detection] (#secrets)
   * [#4: Static application security testing (SAST)] (#sast)
